@@ -5,13 +5,9 @@ import com.javacourse.minesweeper.MineGenerator;
 
 public class Main {
 
-
-
     Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        System.out.println("Hello World");
 
 
         Random random = new Random();
@@ -25,8 +21,11 @@ public class Main {
         System.out.println(java.util.Arrays.toString(coordinates2));
         System.out.println(java.util.Arrays.toString(coordinates3)); // should be same as coordinates2
 
+        String[]mineField =  {"-","-", "-", "-", "-", "-", "-", "-", "-", "-" };
+        System.out.println(java.util.Arrays.toString(mineField) + java.util.Arrays.toString(coordinates));
+
         //TODO 1.börja med renderingen
-       printTemplate();
+        //printTemplate();
        //TODO 2 kommando f för flagga
         //TODO 3 kommando r för röjning
         //TODO 4 kommando q för quit
@@ -40,8 +39,18 @@ public class Main {
 
         //TODO Gör en metod och anropa från main - för att kunna bryta i flera metoder
 
+
+        //TODO Testa alla kommandon osv på denna!
+        System.out.println(" A B C D");
+        System.out.println("+----------");
+        System.out.println("0| - - - -");
+        System.out.println("1| - - - -");
+        System.out.println("2| - - - -");
+        System.out.println("3| - - - -");
+
+
     }
-        static void printTemplate() {
+        /*static void printTemplate() {
 
             Scanner scanner = new Scanner(System.in);
 
@@ -62,7 +71,7 @@ public class Main {
         }
         static void prompt(){
 
-        }
+        }*/
     }
 
 
