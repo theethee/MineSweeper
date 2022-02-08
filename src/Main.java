@@ -6,11 +6,12 @@ import com.javacourse.minesweeper.MineGenerator;
 public class Main {
 
 
-    System.out.println("Hello World");
 
     Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        System.out.println("Hello World");
 
 
         Random random = new Random();
