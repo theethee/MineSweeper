@@ -7,7 +7,7 @@ import com.javacourse.minesweeper.MineGenerator;
 public class Main {
 
     static String input = "-";
-    static String[] queue = { input , input , input , input , input ,
+    static String[] rendering = { input , input , input , input , input ,
             input , input , input };
 
     public enum Command{
@@ -26,7 +26,7 @@ public class Main {
         parseCommand(input);
 
         while(true){
-            String lista = Arrays.toString(queue);
+            String lista = Arrays.toString(rendering);
             String lista2 = lista.replaceAll(","," ");
             lista2 = lista2.replaceFirst("]", " ");
             lista2 = lista2.replaceFirst("\\[", "|");
